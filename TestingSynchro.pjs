@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="analysis">
+			<Prp name="key" type="S" value="{730F4ED1-9ACC-40C3-9BF4-5DEDF0A1F6FF}"/>
+		</Node>
+		<Node name="child list"/>
+		<Node name="files"/>
+		<Node name="folders">
+			<Node name="folders"/>
+		</Node>
+		<Node name="scc"/>
+		<Node name="settings">
+			<Node name="{5a85e200-b5d2-4f74-972a-0221f2956a19}">
+				<Prp name="type" type="I" value="5"/>
+				<Prp name="value" type="S" value="Program Files (x86)\SmartBear\TestComplete 9\Bin\Log"/>
+			</Node>
+			<Prp name="key" type="S" value="{A9115F73-A2D1-4248-9E96-E44E9638470D}"/>
+			<Prp name="settingsversion" type="S" value="9.0"/>
+		</Node>
+		<Node name="test data">
+			<Node name="child list"/>
+			<Prp name="key" type="S" value="{7B258524-B3C2-4F05-9A8C-E13A807A7257}"/>
+		</Node>
+		<Node name="variables">
+			<Prp name="key" type="S" value="{AA747699-EB7C-4587-81D1-23BC08EAA338}"/>
+		</Node>
+		<Prp name="key" type="S" value="{297C6C58-3DB0-4F93-A1C5-78E1EC26809D}"/>
+		<Prp name="signature" type="S" value="{24B6FA0B-0143-461A-9758-AEB9E9A9428B}"/>
+		<Prp name="version" type="S" value="9.0"/>
+	</Node>
+</Nodes>

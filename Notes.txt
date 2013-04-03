@@ -1,0 +1,7 @@
+Project	: Related tests 
+
+CheckPoint	: Verify anything in the application. 
+
+To record test in script, click on the Red Circle with Key, and select from dropdown.
+
+Th
